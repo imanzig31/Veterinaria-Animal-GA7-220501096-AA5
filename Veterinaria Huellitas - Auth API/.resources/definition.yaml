@@ -1,0 +1,5 @@
+$kind: collection
+description: Colección lista para probar registro, login y acceso protegido.
+variables:
+  baseUrl: http://localhost:3000
+  token: ""

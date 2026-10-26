@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{baseUrl}}/api/auth/registro"
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "nombre": "Ana Pérez",
+      "correo": "ana@huellitas.com",
+      "contraseña": "ClaveSegura123"
+    }
+order: 2000

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f8f2">
+  <title>Huellitas | Acceso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="welcome-panel" aria-label="Bienvenida">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">✳</span><span>huellitas</span></div>
+      <div class="welcome-copy">
+        <span class="eyebrow">CLÍNICA VETERINARIA</span>
+        <h1>Un lugar feliz<br>para sus <em>huellitas.</em></h1>
+        <p>Cuidamos a quienes hacen de cada día algo especial.</p>
+      </div>
+      <div class="illustration" aria-hidden="true">
+        <div class="sun"></div><div class="plant plant-left">✦</div>
+        <div class="pet-card"><div class="pet-ear left"></div><div class="pet-ear right"></div><div class="pet-face"><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="snout"><i></i></span></div><div class="pet-body"></div></div>
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span><span class="floating-heart">♥</span>
+        <div class="ground"></div>
+      </div>
+      <div class="panel-footer"><span>♥</span> Hecho con cariño para ellos</div>
+    </section>
+
+    <section class="form-panel" aria-label="Acceso a la cuenta">
+      <div class="mobile-brand"><span class="brand-mark">✳</span><span>huellitas</span></div>
+      <div class="form-wrap">
+        <div class="form-heading">
+          <span class="eyebrow" id="form-eyebrow">BIENVENIDO DE VUELTA</span>
+          <h2 id="form-title">Qué gusto verte</h2>
+          <p id="form-subtitle">Ingresa tus datos para continuar.</p>
+        </div>
+        <div class="tabs" role="tablist" aria-label="Tipo de acceso">
+          <button class="tab active" id="login-tab" type="button" role="tab" aria-selected="true">Iniciar sesión</button>
+          <button class="tab" id="register-tab" type="button" role="tab" aria-selected="false">Crear cuenta</button>
+        </div>
+        <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
+        <form id="auth-form" novalidate>
+          <label class="field" id="name-field" hidden>
+            <span>Nombre completo</span>
+            <input id="nombre" name="nombre" type="text" placeholder="Ej. Ana Pérez" autocomplete="name" maxlength="80">
+          </label>
+          <label class="field">
+            <span>Correo electrónico</span>
+            <input id="correo" name="correo" type="email" placeholder="tu@correo.com" autocomplete="email" required>
+          </label>
+          <label class="field">
+            <span>Contraseña</span>
+            <div class="password-wrap">
+              <input id="contraseña" name="contraseña" type="password" placeholder="Mínimo 8 caracteres" autocomplete="current-password" required>
+              <button class="password-toggle" id="toggle-password" type="button" aria-label="Mostrar contraseña">Mostrar</button>
+            </div>
+          </label>
+          <button class="submit-button" id="submit-button" type="submit">Iniciar sesión <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="security-note"><span aria-hidden="true">⌑</span> Tu información se mantiene segura y privada.</p>
+        <div id="logged-in" class="logged-in" hidden>
+          <div class="avatar" id="avatar">A</div>
+          <div><strong id="user-name">Tu cuenta</strong><span id="user-email"></span></div>
+          <button id="logout-button" type="button">Cerrar sesión</button>
+        </div>
+      </div>
+      <footer class="form-footer">© 2026 Clínica Veterinaria Huellitas <span>·</span> Cuidamos de ellos</footer>
+    </section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
